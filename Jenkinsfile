@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('deploy') {
             steps {
-                echo 'deploy into Dev environment'
+                echo 'deploy into Staging environment'
             }
         }
     }
