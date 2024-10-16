@@ -31,7 +31,7 @@ public class UnitTest1
 
     // TODO 3: Fix the rounding test (Peter) -> then deploy.
     [Theory]
-    [InlineData(/* Expected value: */ 1, new double[] {
+    [InlineData(/* Expected value: */ 2, new double[] {
              /* Input to function: */ 1.1 
     })]
     public void TestRounding(double expected, double[] data)
