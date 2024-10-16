@@ -6,14 +6,14 @@ public class UnitTest1
         0.0,
         0.0
     })]
-    [InlineData(340, new double[] {
+    [InlineData(200, new double[] {
         100,
         200,
         200,
         300,
         900
     })]
-    [InlineData(340, new double[] {
+    [InlineData(200, new double[] {
         300,
         100,
         200,

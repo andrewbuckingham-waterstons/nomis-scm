@@ -3,17 +3,16 @@ public class Calculations(IEnumerable<double> _data)
     public double TypicalDistanceTravelledToWork()
     {
         double score = 0.0;
-        int count = 0;
+        int count = _data.Count();
         
         // TODO: 1. Change this to be the Median, rather than the Average, then move on to the Unit Test (Nithya)
-        foreach (double value in _data)
-        {
-            score += value;
-            count++;
-        }
 
-        score /= count;
-
+        
+            score = _data
+                .OrderBy(x => x)
+                .Skip(count/2)
+                .First();
+               
         return AsRoundedValue(score);
     }
     
