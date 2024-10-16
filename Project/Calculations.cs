@@ -19,6 +19,6 @@ public class Calculations(IEnumerable<double> _data)
     
     private static double AsRoundedValue(double original)
     {
-        return Math.Round(original, MidpointRounding.ToZero); // TODO: 2. Change this to use ToPositiveInfinity rounding (Peter)
+        return Math.Round(original, MidpointRounding.ToPositiveInfinity); // TODO: 2. Change this to use ToPositiveInfinity rounding (Peter)
     }
 }
